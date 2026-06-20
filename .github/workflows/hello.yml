@@ -1,0 +1,15 @@
+# Workflow
+# Should Have Name
+name: Hello
+
+on:
+  workflow_dispatch: 
+# Jobs tells what t
+jobs:
+  say-hello:
+  #Creates an Ephemeral container with ubuntu running
+    runs-on: ubuntu-latest
+    # THat Epermal conteirn will ahve sgeps to run , hecne name those steps and run . Run has the command
+    steps:
+     - name: Say Hello to Everyone
+       run: echo "Hello dOstom"
